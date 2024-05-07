@@ -1,0 +1,165 @@
+/* Fontes */
+@font-face {
+    font-family: 'YoungSerif-Regular';
+    src: url('/assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('/assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+/* Variáveis */
+:root {
+    --branco: hsl(0, 0%, 100%);
+    --cards: hsl(330, 100%, 98%);
+    --fundo: hsl(30, 54%, 90%);
+    --cinza-claro: hsl(30, 18%, 87%);
+    --marrom-claro: hsl(0, 29%, 32%);
+    --marrom-escuro: hsl(0, 43%, 18%);
+    --fonte-titulo: 'YoungSerif-Regular', sans-serif;
+    --fonte-texto: 'Outfit', sans-serif;
+}
+
+/* Definições universais */
+* {
+    border-radius: 20px;
+}
+
+/* Conteúdo principal */
+body {
+    background-color: var(--fundo);
+    font-family: var(--fonte-texto);
+    color: var(--marrom-escuro);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+    padding: 0 20px;
+    max-width: 70vw;
+    background-color: var(--branco);
+}
+
+h1,
+h2 {
+    font-family: var(--fonte-titulo);
+    font-weight: 100;
+}
+
+/* Para todas as seções */
+section {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 948px;
+    width: 100%;
+}
+
+/** Seção de cards */
+.card {
+    margin-top: 30px;
+}
+
+img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+    color: var(--marrom-escuro);
+}
+
+.tempo-de-preparo {
+    background-color: var(--cards);
+    padding: 20px 40px;
+    margin-top: 30px;
+}
+
+h4 {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 0;
+    color: hsl(330, 74%, 27%);
+    padding-top: 10px;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+li {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* Para as demais seções */
+h2 {
+    color: var(--marrom-claro);
+    font-size: 1.8em;
+    margin-top: 15px;
+}
+
+
+ol {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+strong {
+    color: var(--marrom-claro);
+}
+
+hr {
+    border: 0.04px solid var(--cinza-claro);
+    margin: 10px 0;
+}
+
+/* Nutrição */
+.nutrition {
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--cinza-claro);
+    border-radius: 0;
+}
+
+td {
+}
+
+.valor {
+    font-weight: 600;
+    color: var(--marrom-claro);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
